@@ -13,12 +13,12 @@ if (isNaN(distance)) {
         let ticketPrice = priceKm * distance;
         if (age < 18) {
             let ticketPriceYoung = ticketPrice - ((ticketPrice / 100) * 20);
-            alert('Il prezzo del viaggio con sconto Yunior è ' + ticketPriceYoung + "€")
+            alert('Il prezzo del viaggio con sconto Yunior è ' + ticketPriceYoung.toFixed(2) + "€")
         } else if (age > 65) {
             let ticketPriceSenior = ticketPrice - ((ticketPrice / 100) * 40);
-            alert('Il prezzo del viaggio con sconto Senior è ' + ticketPriceSenior + "€")
+            alert('Il prezzo del viaggio con sconto Senior è ' + ticketPriceSenior.toFixed(2) + "€")
         } else {
-            alert('Il prezzo del viaggio è ' + ticketPrice + "€")
+            alert('Il prezzo del viaggio è ' + ticketPrice.toFixed(2) + "€")
         }
     }
 }
